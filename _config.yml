@@ -1,37 +1,24 @@
-
-exclude:
-  - "/vendor/"
-  - "Gemfile"
-  - "Gemfile.lock"
-  - "README.md"
-  - "LICENSE.md"
-  - "*.gemspec"
-
-keep_files:
-  - "CNAME"
-  - ".git"
-  - ".gitignore"
-
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Airspace
-subtitle: "A free HTML5 agency template"
-url: "http://luminousrubyist.github.io" # the base hostname & protocol for your site
-# baseurl: "/the/subpath/of/your/site" # Set this value to "" if you want your site to be root
-baseurl: "/airspace-jekyll"
-cover: "/assets/cover.png"
-logo: "/assets/logo.png"
+title: Sciblog
+email: airrayagroup@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+baseurl: "/sciblog" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+author: AIRRAYA
+
+# Gems
+gems: [jekyll-paginate]
 
 # Build settings
 markdown: kramdown
-
-# Google analytics
-# ga_tracking_id: "UA-XXXX-1"
-
-# Category descriptions (for archive pages)
-descriptions:
-  - cat: jekyll
-    desc: "Posts describing Jekyll setup techniques."
-
-  - cat: dummy
-    desc: "Just some placeholder posts, lorem ipsum and the rest."
+paginate: 5
+paginate_path: 'page:num/'
+comments: true
+excerpt_separator: <!-- more -->
