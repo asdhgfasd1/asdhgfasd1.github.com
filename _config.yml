@@ -1,37 +1,70 @@
-
-exclude:
-  - "/vendor/"
-  - "Gemfile"
-  - "Gemfile.lock"
-  - "README.md"
-  - "LICENSE.md"
-  - "*.gemspec"
-
-keep_files:
-  - "CNAME"
-  - ".git"
-  - ".gitignore"
-
-
-# Site settings
-title: Airspace
-subtitle: "A free HTML5 agency template"
-url: "http://luminousrubyist.github.io" # the base hostname & protocol for your site
-# baseurl: "/the/subpath/of/your/site" # Set this value to "" if you want your site to be root
-baseurl: "/airspace-jekyll"
-cover: "/assets/cover.png"
-logo: "/assets/logo.png"
-
-# Build settings
+# Configurations
 markdown: kramdown
+markdown_ext:  markdown,mkdown,mkdn,mkd,md
+highlighter: pygments
 
-# Google analytics
-# ga_tracking_id: "UA-XXXX-1"
+# Needed for backward compatibility
+gems: [jekyll-paginate]
 
-# Category descriptions (for archive pages)
-descriptions:
-  - cat: jekyll
-    desc: "Posts describing Jekyll setup techniques."
+# Permalinks
+permalink:        /blog/:year/:month/:day/:title
 
-  - cat: dummy
-    desc: "Just some placeholder posts, lorem ipsum and the rest."
+# Setup
+title:            'Jekyll Metro'
+tagline:          'A Metro theme for Jekyll'
+description:      'A Sample blog using Jekyll Metro'
+url:              'https://asdhgfasd1.github.io/'
+baseurl:          ''
+
+# Navigation
+navigation:
+- text: About
+  url: /about/
+- text: Resume
+  url: /resume/
+- text: Blog
+  url: /blog/
+- text: Tags
+  url: /tags/
+- text: Archive
+  url : /archive/
+- text: Search
+  url: /search/
+
+
+# Author Details
+author:         'Abdel Raoof Olakara'
+
+#Social Media links (Use complete URL except for email)
+dribbble:
+email:
+facebook:       'https://www.facebook.com/olakara'
+flickr:
+github:         'https://github.com/asdhgfasd1'
+gplus:          'https://plus.google.com/100425464897246255887/'
+instagram:
+pinterest:
+linkedin:       'https://ae.linkedin.com/in/olakara/'
+rss:
+stackoverflow:  'http://stackoverflow.com/users/185655/abdel-raoof'
+twitter:        'https://twitter.com/olakara'
+
+# Google Analytics
+gahandler: 'UA-52149651-1'
+
+#if footersvg is 'true' the social media links will be shown top on the copy right in the footer
+footersvg: 'true'
+
+# Disqus
+disqushandler: 'testingblogo'
+
+# txtpen
+txtpenhandler: 'testingblogo'
+
+# Blog Configurations
+paginate: 10 # Posts per page on the blog index
+paginate_path: '/blog/page:num'
+destination: ./_site
+
+# Custom vars
+version:          0.9x beta 2
